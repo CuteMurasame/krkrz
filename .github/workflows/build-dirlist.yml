@@ -32,4 +32,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: dirlist-plugin
-          path: src\plugins\win32\dirlist\Release\dirlist.dll
+          path: bin\win32\plugin\dirlist.dll

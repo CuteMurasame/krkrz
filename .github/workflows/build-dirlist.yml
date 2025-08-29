@@ -25,8 +25,8 @@ jobs:
         with:
           vs-version: 'latest'
 
-      - name: Build dirlist.vcxproj (Release x64)
-        run: msbuild src\plugins\win32\dirlist\dirlist.vcxproj /p:Configuration=Release /p:Platform=x64
+      - name: Build dirlist.vcxproj (Release x86)
+        run: msbuild src\plugins\win32\dirlist\dirlist.vcxproj /p:Configuration=Release /p:Platform=x86
 
       - name: Upload dirlist.dll
         uses: actions/upload-artifact@v4
